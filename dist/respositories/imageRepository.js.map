@@ -1,0 +1,1 @@
+{"version":3,"file":"imageRepository.js","sourceRoot":"","sources":["../../src/respositories/imageRepository.ts"],"names":[],"mappings":"AAAA,MAAM,OAAO,eAAe;IACpB,OAAO,CAAC,OAAe,EAAE,MAAgB;QAC/C,gDAAgD;QAChD,mEAAmE;QACnE,wBAAwB;QACxB,OAAO,CAAC,GAAG,CAAC,CAAC;IACd,CAAC;CACD"}

@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"declaration": true,
+		"lib": ["es6", "dom"],
+		"module": "esnext",
+		"downlevelIteration": true,
+		"experimentalDecorators": true,
+		"esModuleInterop": true,
+		"target": "es6",
+		"noImplicitAny": true,
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"outDir": "dist",
+		"baseUrl": ".",
+		"paths": {
+			"*": ["node_modules/*"]
+		},
+		"suppressImplicitAnyIndexErrors": true
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"],
+	"ts-node": {
+		"esm": true,
+		"experimentalSpecifierResolution": "node"
+	}
+}
