@@ -1,0 +1,58 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"description": "This is an Api to get images by giving keyword and labels",
+		"version": "1.0.0",
+		"title": "Tasks API",
+		"contact": {
+			"email": "oumamem@gmail.com"
+		},
+		"license": {
+			"name": "Apache 2.0",
+			"url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+		}
+	},
+	"schemes": ["http"],
+	"host": "localhost:3030",
+	"basePath": "/",
+	"paths": {
+		"/analyze": {
+			"post": {
+				"summary": "Give keyword and labels and response an image with more labels",
+				"description": "Give keyword and labels and response an image with more labels",
+				"produces": ["application/json"],
+				"consumes": ["application/json"],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "body",
+						"description": "Image object",
+						"required": true,
+						"schema": {
+							"type": "object",
+							"properties": {
+								"keyword": {
+									"type": "string"
+								},
+								"labels": {
+									"type": "array of string"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"type": "Image Response"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		}
+	}
+}
