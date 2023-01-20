@@ -6,7 +6,7 @@ export class UnsplashRepository {
 
 	constructor() {
 		const unsplash = createApi({
-			accessKey: process.env.ACCESS_KEY,
+			accessKey: process.env.ACCESS_KEY_UNSPLASH,
 			fetch: crossFetch,
 		});
 		this.unsplash = unsplash;

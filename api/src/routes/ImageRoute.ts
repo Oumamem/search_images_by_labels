@@ -7,4 +7,5 @@ const imageController = new ImageController();
 router.post("/", async (req: Request, res: Response) => {
 	return imageController.analyzeImages(req, res);
 });
+
 export default router;
